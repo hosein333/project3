@@ -4,7 +4,7 @@ import "fmt"
 
 type NationalID string
 
-func IsNationalIDlid(nID NationalID) bool {
+func (id NationalID) IsNationalIDlid(nID NationalID) bool {
 	if len(nID) == 10 {
 		return true
 	}
@@ -16,5 +16,5 @@ func main() {
 	var nID NationalID
 	nID = "12739221840"
 
-	fmt.Println("My National ID Number %s is Vlid :%v", nID, IsNationalIDlid(nID))
+	fmt.Println("My National ID Number %s is Vlid :%v", nID, nID.IsNationalIDlid(nID))
 }
