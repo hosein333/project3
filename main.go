@@ -14,7 +14,7 @@ func IsNationalIDlid(nID NationalID) bool {
 
 func main() {
 	var nID NationalID
-	nID = "1273922184"
+	nID = "12739221840"
 
 	fmt.Println("My National ID Number %s is Vlid :%v", nID, IsNationalIDlid(nID))
 }
