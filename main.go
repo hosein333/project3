@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	"/home/mohammadjavad/ncode"
+	"project3/ncode"
 )
 
 func main() {
