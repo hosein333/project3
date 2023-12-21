@@ -7,8 +7,19 @@ import (
 
 func main() {
 
-	nID1 := lib.NewNationalID("1274022185")
+	nID, err := lib.NewNationalID("0114022185")
 
-	fmt.Println("OutClass, IsValid: ", nID1.IsValid)
+	if err != nil {
+		fmt.Println(err)
+		return
+	}
+
+	fmt.Println("IsValid: ", nID.IsValid)
+	city, err := nID.GetCity()
+	if err != nil {
+		fmt.Println(err)
+		return
+	}
+	fmt.Println(city)
 
 }
