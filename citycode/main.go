@@ -1,10 +1,14 @@
-package lib
+package citycode
 
 import "errors"
 
-var cityCode map[string]string = map[string]string{"011": "tehran jonob"}
+var cityCode map[string]string = map[string]string{
+	"011": "tehran jonob",
+	"127": "esf",
+}
 
-func getCityName(code string)(string,error){
+
+func GetCityName (code string) (string, error){
 	val, ok := cityCode[code]
 	if ok {
 		return val, nil

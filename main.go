@@ -1,13 +1,13 @@
-package main 
+package main
 
 import (
 	"fmt"
-	"project3/lib"
+	"national_id"
 )
 
 func main() {
 
-	nID, err := lib.NewNationalID("0114022185")
+	nID, err := national_id.NewNationalID("1274022185")
 
 	if err != nil {
 		fmt.Println(err)
