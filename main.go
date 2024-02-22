@@ -15,7 +15,7 @@ func main() {
 	}
 
 	fmt.Println("IsValid: ", nID.IsValid)
-	city, err := nID.GetCity()
+	city, err := nID.Getcity()
 	if err != nil {
 		fmt.Println(err)
 		return
