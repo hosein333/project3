@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	"national_id"
+	"project3/national_id"
 )
 
 func main() {

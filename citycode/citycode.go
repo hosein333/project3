@@ -8,7 +8,7 @@ var cityCode map[string]string = map[string]string{
 }
 
 
-func GetCityName (code string) (string, error){
+func GetCityName(code string) (string, error){
 	val, ok := cityCode[code]
 	if ok {
 		return val, nil
